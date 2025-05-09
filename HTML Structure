@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            transition: background-color 0.5s ease;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #333;
+            transition: color 0.5s ease;
+        }
+        
+        section {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .content-box {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .button-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        .dynamic-element {
+            background-color: #fff4e6;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            border-left: 4px solid #ffa94d;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="main-title">Interactive JavaScript Demo</h1>
+        <p>Explore dynamic web content manipulation with JavaScript</p>
+    </header>
+
+    <section>
+        <h2>Dynamic Text Content</h2>
+        <div class="content-box" id="text-content">
+            This text will change when you click the button below.
+        </div>
+        <button id="change-text">Change Text Content</button>
+    </section>
+
+    <section>
+        <h2>Style Modification</h2>
+        <div class="content-box" id="style-target">
+            The styles of this element will change when you click the button.
+        </div>
+        <div class="button-container">
+            <button id="change-color">Change Color</button>
+            <button id="change-size">Change Size</button>
+            <button id="reset-styles">Reset Styles</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Element Addition/Removal</h2>
+        <div class="content-box" id="element-container">
+            Click the button below to add or remove elements.
+        </div>
+        <div class="button-container">
+            <button id="add-element">Add Element</button>
+            <button id="remove-element">Remove Element</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created with HTML, CSS, and JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
